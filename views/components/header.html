@@ -1,0 +1,64 @@
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/90 backdrop-blur">
+  <div class="mx-auto flex w-full max-w-6xl items-center justify-between gap-6 py-2 sm:px-6">
+    <div class="flex items-center gap-3">
+      
+      <a href="/" class="flex items-center">
+      <img
+        src="{{globals.logo.getImage()}}"
+        alt="{{globals.site_name}}"
+        class="h-14 w-auto"
+        loading="lazy"
+      />
+      <span class="sr-only">{{globals.site_name}} Home</span>
+      </a>
+      <a href="homepage.first().getUrl}}" class="flex items-center">
+        <img
+          src="https://7m2bt8n1.media.zestyio.com/ssvd-fish.png"
+          alt="St. Vincent de Paul"
+          class="h-12 w-auto"
+          loading="lazy"
+        />
+      </a> 
+    </div>
+  
+    {{include /components/search.html}}
+ 
+    <nav class="hidden items-center gap-8 text-sm font-medium text-slate-700 md:flex" aria-label="Primary">
+      <a href="{{blog.first().getUrl()}}" class="transition hover:text-slate-900">Story Hub</a>
+      <a href="{{location_finder.first().getUrl()}}" class="transition hover:text-slate-900">Locations</a>
+      <a href="{{ways_we_help.first().getUrl()}}" class="transition hover:text-slate-900">Ways We Help</a>
+      <a href="{{about.first().getUrl()}}" class="transition hover:text-slate-900">About</a>
+      <a
+        href="{{donation_page.first().getUrl()}}"
+        class="rounded-full bg-brand px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white shadow-sm transition hover:bg-brand-light"
+      >
+        Donate  
+      </a>
+    </nav>  
+  
+    <div class="flex items-center gap-3 md:hidden">
+      <a
+        href="{{donation_page.first().getUrl()}}"
+        class="rounded-full bg-brand px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white shadow-sm transition hover:bg-brand-light"
+      >
+        Donate
+      </a>
+      <details class="relative">
+        <summary
+          class="list-none rounded-md border border-slate-200 px-3 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:text-slate-900"
+          aria-label="Toggle navigation"
+        >
+          Menu
+        </summary>
+        <div class="absolute right-0 mt-3 w-48 rounded-md border border-slate-200 bg-white shadow-lg">
+          <nav class="flex flex-col gap-2 px-4 py-3 text-sm font-medium text-slate-700" aria-label="Mobile">
+            <a href="{{articles.first().getUrl()}}" class="rounded-md px-2 py-1 transition hover:bg-slate-100">Articles</a>
+            <a href="{{location_finder.first().getUrl()}}" class="rounded-md px-2 py-1 transition hover:bg-slate-100">Locations</a>
+            <a href="{{ways_we_help.first().getUrl()}}" class="rounded-md px-2 py-1 transition hover:bg-slate-100">Ways We Help</a>
+            <a href="{{about.first().getUrl()}}" class="rounded-md px-2 py-1 transition hover:bg-slate-100">About</a>
+          </nav>
+        </div>
+      </details>
+    </div>
+  </div>
+</header>

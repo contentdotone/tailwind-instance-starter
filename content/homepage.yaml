@@ -1,0 +1,28 @@
+
+  - id: "3cf8-9aa6-fdd7"
+    web:
+      metaDescription: ""
+      metaTitle: "Homepage"
+      metaLinkText: "Homepage"
+      metaKeywords: null
+      pathPart: "zesty_home"
+      path: "/"
+      sitemapPriority: -1
+      canonicalTagMode: 1
+      canonicalQueryParamWhitelist: null
+      canonicalTagCustomValue: null
+      parent: "/"
+    meta:
+      sort: 0
+      listed: true
+      createdByUserZUID: "5-44ccc74-sn4pc4st3r"
+    data:
+      first_block: "/-/block/donor_perfect_form.html?variant=7-eab5cfd28b-2flh9z"
+      h1_title: "Serving neighbors with dignity, compassion, and hope. Join today!"
+      lead_in_content: "<p>The Society of St. Vincent de Paul USA harnesses the power of community and partnerships to feed, clothe, house and heal individuals and families in our community who have nowhere else to turn for help. Our volunteer members &ndash; known as Vincentians &ndash; are women and men who are compelled by our Catholic Christian faith to serve those who are needy and suffering.</p>\n<p>From rental assistance and homelessness prevention, to thrift stores and food pantries, to disaster recovery and charitable pharmacies, we share our time and treasure with those who need help and hope. We believe EVERYONE deserves a fair chance at a bright future, regardless of income or life circumstances.</p>"
+      lead_in_image_1: "https://7m2bt8n1.media.zestyio.com/614658d9c81f4b13f606f737_svdp.jpg"
+      lead_in_image_2: "https://7m2bt8n1.media.zestyio.com/stlouse-arch.jpg"
+      lead_in_image_3: "https://7m2bt8n1.media.zestyio.com/svdp-seattle-home-visit-e1713996675308-768x537.jpg"
+      lead_in_title: "Love Thy Neighbor."
+      second_block: "/-/block/latest_stories.html?variant=7-88cd90e0cc-wlzl2h"
+      third_block: "/-/block/svdp_structure.html?variant=7-dcb0baa083-0d7s11"

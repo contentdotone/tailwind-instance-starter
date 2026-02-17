@@ -1,0 +1,22 @@
+
+  - id: "12ae-b036-ab1a"
+    web:
+      metaDescription: ""
+      metaTitle: "Ways We Help"
+      metaLinkText: "Ways We Help"
+      metaKeywords: null
+      pathPart: "programs-ways-we-help"
+      path: "/programs-ways-we-help/"
+      sitemapPriority: -1
+      canonicalTagMode: 1
+      canonicalQueryParamWhitelist: null
+      canonicalTagCustomValue: null
+      parent: "/"
+    meta:
+      sort: 154
+      listed: true
+      createdByUserZUID: "5-44ccc74-sn4pc4st3r"
+    data:
+      content: "<h4><em>A network of friends, inspired by Gospel values, growing in holiness and building a more just world through personal relationships with and service to people in need.</em>&nbsp;</h4>\n<p>Vincentians serve more than 5 million people annually in rural, suburban, and urban communities across the United States. The National Council provides our Vincentian members with financial support, best practices, training, and spiritual formation as they assist our most vulnerable neighbors.</p>"
+      image: "https://7m2bt8n1.media.zestyio.com/svdp-helping.jpg"
+      title: "Ways We Help"

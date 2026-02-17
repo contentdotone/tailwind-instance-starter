@@ -1,0 +1,16 @@
+{
+    "search" : "{{request.queryParam(q)}}",
+    "articles":
+    [
+        {{each articles as art where art.title like '%{request.queryParam(q)}%' limit 10}}
+        {{art.toJSON(2)}}{{art._arraycomma}}
+        {{/each}}
+    ],
+     "locations":
+    [
+        {{each locations as loc where loc.location_name like '%{request.queryParam(q)}%' limit 10}}
+        {{loc.toJSON(2)}}{{loc._arraycomma}}
+        {{/each}}
+    ]
+
+}

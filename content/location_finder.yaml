@@ -1,0 +1,20 @@
+
+  - id: "f691-f81d-8ec8"
+    web:
+      metaDescription: ""
+      metaTitle: "Location Finder"
+      metaLinkText: "Location Finder"
+      metaKeywords: null
+      pathPart: "location-finder"
+      path: "/location-finder/"
+      sitemapPriority: -1
+      canonicalTagMode: 1
+      canonicalQueryParamWhitelist: null
+      canonicalTagCustomValue: null
+      parent: "/"
+    meta:
+      sort: 2
+      listed: true
+      createdByUserZUID: "5-57801f6-3cj46d"
+    data:
+      title: "SVdP Location Finder"

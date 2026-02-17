@@ -1,0 +1,453 @@
+<section class="w-full pt-5">
+  <div class="mx-auto w-full max-w-5xl">
+    <div class="overflow-hidden bg-white">
+      <div class="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:gap-10 ">
+        <form class="space-y-10" data-step-form>
+          <div class="space-y-3">
+            <h1 class="text-3xl font-semibold text-slate-900">You Will Make a Difference</h1>
+            <p class="text-sm text-slate-600">
+              "Go to the poor; you will find God." — St. Vincent de Paul
+            </p>
+          </div>
+
+          <section class="space-y-6 rounded-2xl border border-slate-200 p-6" data-step="1">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand">Step 1 of 3</p>
+                <h2 class="mt-2 text-xl font-semibold text-slate-900">Choose your impact</h2>
+              </div>
+              <span class="rounded-full bg-brand/10 px-3 py-1 text-xs font-semibold text-brand">Start</span>
+            </div>
+
+            <p class="text-sm text-slate-600">
+              Your gift creates hope today. Pick an amount and the mission you care about most.
+            </p>
+
+            <div class="space-y-4">
+              <h3 class="text-lg font-semibold text-slate-900">I want to give</h3>
+              <div class="grid grid-cols-2 gap-3 text-sm font-medium">
+                <label class="flex cursor-pointer items-center gap-2 rounded-lg border border-slate-200 px-3 py-2 text-slate-700">
+                  <input type="radio" name="frequency" class="text-brand" checked />
+                  One-time
+                </label>
+                <label class="flex cursor-pointer items-center gap-2 rounded-lg border border-slate-200 px-3 py-2 text-slate-700">
+                  <input type="radio" name="frequency" class="text-brand" />
+                  Monthly
+                </label>
+              </div>
+
+              <div class="grid grid-cols-2 gap-3 text-sm font-semibold">
+                <label class="flex cursor-pointer items-center justify-between rounded-lg border border-slate-200 px-3 py-3">
+                  <input type="radio" name="amount" class="text-brand" />
+                  <span>&dollar;1,000</span>
+                </label>
+                <label class="flex cursor-pointer items-center justify-between rounded-lg border border-slate-200 px-3 py-3">
+                  <input type="radio" name="amount" class="text-brand" />
+                  <span>&dollar;500</span>
+                </label>
+                <label class="flex cursor-pointer items-center justify-between rounded-lg border border-brand bg-brand/5 px-3 py-3 text-brand">
+                  <input type="radio" name="amount" class="text-brand" checked />
+                  <span>&dollar;250</span>
+                </label> 
+                <label class="flex cursor-pointer items-center justify-between rounded-lg border border-slate-200 px-3 py-3">
+                  <input type="radio" name="amount" class="text-brand" />
+                  <span>&dollar;150</span>
+                </label>
+                <label class="flex cursor-pointer items-center justify-between rounded-lg border border-slate-200 px-3 py-3">
+                  <input type="radio" name="amount" class="text-brand" />
+                  <span>&dollar;50</span>
+                </label>
+                <label class="flex cursor-pointer items-center justify-between rounded-lg border border-dashed border-slate-300 px-3 py-3 text-slate-600">
+                  <input type="radio" name="amount" class="text-brand" />
+                  <span>Other</span>
+                </label>
+              </div> 
+ 
+              <div>
+                <label class="text-sm font-medium text-slate-700" for="designation">Please designate my gift to</label>
+                <select
+                  id="designation"
+                  class="mt-2 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700"
+                >
+                  <option value="">Select a designation</option>
+                  <option>Most Urgent Needs</option>
+                  <option>General Donation</option>
+                  <option>Friends of the Poor</option>
+                  <option>Domestic Disaster Relief</option>
+                  <option>International Relief and Development</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="rounded-xl bg-slate-50 p-4 text-sm text-slate-600">
+              Encouragement: Every dollar helps stock shelves, shelter families, and restore dignity.
+            </div>
+
+            <div class="flex flex-wrap gap-3">
+              <button
+                type="button"
+                class="rounded-lg bg-brand px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-light"
+                data-step-next="1"
+              >
+                Continue to Step 2
+              </button>
+              <span class="text-xs text-slate-500">You can edit this step anytime.</span>
+            </div>
+          </section>
+
+          <section class="hidden space-y-6 rounded-2xl border border-slate-200 p-6" data-step="2">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand">Step 2 of 3</p>
+                <h2 class="mt-2 text-xl font-semibold text-slate-900">Share your details</h2>
+              </div>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-500">Next</span>
+            </div>
+
+            <p class="text-sm text-slate-600">
+              We’ll use this to send your receipt and keep you updated on the impact you’re making.
+            </p>
+
+            <div class="space-y-4">
+              <h3 class="text-lg font-semibold text-slate-900">Tell us about yourself</h3>
+              <div class="grid gap-4 sm:grid-cols-3">
+                <div>
+                  <label class="text-sm font-medium text-slate-700" for="title">Title</label>
+                  <select
+                    id="title"
+                    class="mt-2 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700"
+                  >
+                    <option value="">Select</option>
+                    <option>Mr.</option>
+                    <option>Mrs.</option>
+                    <option>Ms.</option>
+                    <option>Dr.</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="text-sm font-medium text-slate-700" for="first-name">First name</label>
+                  <input
+                    id="first-name"
+                    type="text"
+                    class="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm"
+                  />
+                </div>
+                <div>
+                  <label class="text-sm font-medium text-slate-700" for="last-name">Last name</label>
+                  <input
+                    id="last-name"
+                    type="text"
+                    class="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm"
+                  />
+                </div>
+              </div>
+
+              <label class="flex items-start gap-3 text-sm text-slate-600">
+                <input type="checkbox" class="mt-1 text-brand" />
+                This is a business/organization donation
+              </label>
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label class="text-sm font-medium text-slate-700" for="email">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    class="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm"
+                    placeholder="For your donation receipt"
+                  />
+                </div>
+                <div>
+                  <label class="text-sm font-medium text-slate-700" for="phone">Phone number</label>
+                  <input
+                    id="phone"
+                    type="tel"
+                    class="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <h3 class="text-lg font-semibold text-slate-900">Mailing address</h3>
+              <div>
+                <label class="text-sm font-medium text-slate-700" for="address">Address</label>
+                <input
+                  id="address"
+                  type="text"
+                  class="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm"
+                />
+              </div>
+
+              <div class="grid gap-4 sm:grid-cols-3">
+                <div>
+                  <label class="text-sm font-medium text-slate-700" for="city">City</label>
+                  <input
+                    id="city"
+                    type="text"
+                    class="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm"
+                  />
+                </div>
+                <div>
+                  <label class="text-sm font-medium text-slate-700" for="state">State</label>
+                  <select
+                    id="state"
+                    class="mt-2 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700"
+                  >
+                    <option value="">Select</option>
+                    <option>AL</option>
+                    <option>CA</option>
+                    <option>FL</option>
+                    <option>NY</option>
+                    <option>TX</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="text-sm font-medium text-slate-700" for="zip">Zip</label>
+                  <input
+                    id="zip"
+                    type="text"
+                    class="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-xl bg-slate-50 p-4 text-sm text-slate-600">
+              Encouragement: Thank you for taking a moment to share your details. Your care is felt.
+            </div>
+
+            <div class="flex flex-wrap gap-3">
+              <button
+                type="button"
+                class="rounded-lg border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-300"
+                data-step-prev="2"
+              >
+                Back to Step 1
+              </button>
+              <button
+                type="button"
+                class="rounded-lg bg-brand px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-light"
+                data-step-next="2"
+              >
+                Continue to Step 3
+              </button>
+            </div>
+          </section>
+
+          <section class="hidden space-y-6 rounded-2xl border border-slate-200 p-6" data-step="3">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand">Step 3 of 3</p>
+                <h2 class="mt-2 text-xl font-semibold text-slate-900">Review and submit</h2>
+              </div>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-500">Finish</span>
+            </div>
+
+            <p class="text-sm text-slate-600">
+              Confirm your selections, choose a payment method, and submit your donation.
+            </p>
+
+            <div class="space-y-4">
+              <h3 class="text-lg font-semibold text-slate-900">Payment method</h3>
+              <div class="grid gap-3 sm:grid-cols-3 text-sm font-medium">
+                <label class="flex cursor-pointer items-center gap-2 rounded-lg border border-slate-200 px-3 py-2">
+                  <input type="radio" name="payment" class="text-brand" checked />
+                  Credit card
+                </label>
+                <label class="flex cursor-pointer items-center gap-2 rounded-lg border border-slate-200 px-3 py-2">
+                  <input type="radio" name="payment" class="text-brand" />
+                  PayPal
+                </label>
+                <label class="flex cursor-pointer items-center gap-2 rounded-lg border border-slate-200 px-3 py-2">
+                  <input type="radio" name="payment" class="text-brand" />
+                  Bank account
+                </label>
+              </div>
+            </div>
+
+            <div class="space-y-4 rounded-xl bg-slate-50 p-4">
+              <label class="flex items-start gap-3 text-sm text-slate-600">
+                <input type="checkbox" class="mt-1 text-brand" />
+                My billing and contact addresses are the same
+              </label>
+              <label class="flex items-start gap-3 text-sm text-slate-600">
+                <input type="checkbox" class="mt-1 text-brand" />
+                Please keep my gift anonymous
+              </label>
+              <label class="flex items-start gap-3 text-sm text-slate-600">
+                <input type="checkbox" class="mt-1 text-brand" />
+                I want to add $7.50 to help offset processing fees
+              </label>
+            </div>
+
+            <div class="rounded-xl bg-brand/10 p-4 text-sm text-slate-700">
+              Encouragement: You are bringing hope to neighbors in need. Thank you for giving.
+            </div>
+
+            <div class="flex flex-wrap gap-3">
+              <button
+                type="button"
+                class="rounded-lg border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-300"
+                data-step-prev="3"
+              >
+                Back to Step 2
+              </button>
+              <button
+                type="submit"
+                class="flex-1 rounded-lg bg-brand px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-light"
+              >
+                Review Donation
+              </button>
+            </div>
+          </section>
+        </form>
+
+        <aside class="space-y-6 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+          <div class="overflow-hidden rounded-xl">
+            <img
+              src="https://d28thuxk686zqs.cloudfront.net/assets/client/bb466756-fb4e-4505-9295-62a3331b4a50/51839575-069c-48d1-83bd-a332de1c5387/28940448-e38d-4be8-a2a3-394c5ab35d54.jpg"
+              alt="Stained glass window depicting St. Vincent de Paul."
+              class="h-40 w-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <div class="space-y-3">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Progress</p>
+            <div class="h-2 w-full overflow-hidden rounded-full bg-slate-200">
+              <div class="h-full w-1/3 rounded-full bg-brand" data-step-bar></div>
+            </div>
+            <p class="text-sm text-slate-600" data-step-label>Step 1 of 3 in progress</p>
+          </div>
+
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <span
+                class="flex h-9 w-9 items-center justify-center rounded-full bg-brand text-sm font-semibold text-white"
+                data-step-pill="1"
+              >
+                1
+              </span>
+              <div>
+                <p class="text-sm font-semibold text-slate-900">Impact</p>
+                <p class="text-xs text-slate-500">Choose amount and designation.</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <span
+                class="flex h-9 w-9 items-center justify-center rounded-full bg-slate-200 text-sm font-semibold text-slate-500"
+                data-step-pill="2"
+              >
+                2
+              </span>
+              <div>
+                <p class="text-sm font-semibold text-slate-700">Your info</p>
+                <p class="text-xs text-slate-500">Contact and address details.</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <span
+                class="flex h-9 w-9 items-center justify-center rounded-full bg-slate-200 text-sm font-semibold text-slate-500"
+                data-step-pill="3"
+              >
+                3
+              </span>
+              <div>
+                <p class="text-sm font-semibold text-slate-700">Review</p>
+                <p class="text-xs text-slate-500">Confirm and submit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-xl bg-white p-4 text-sm text-slate-600 shadow-sm">
+            <p class="font-semibold text-slate-900">Everyday Saints</p>
+            <p class="mt-2">
+              Monthly gifts provide steady support for families year-round. Thank you for considering
+              ongoing impact.
+            </p>
+          </div>
+        </aside>
+      </div>
+
+      <div class="border rounded-md border-slate-200 bg-slate-50 px-6 py-5 mb-5 mt-5 text-xs text-slate-600 lg:px-10">
+        <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <div>National Council of the U.S., Society of St. Vincent de Paul</div>
+          <div class="flex flex-wrap gap-4">
+            <a href="tel:(314)576-3993" class="hover:text-slate-900">(314) 576-3993</a>
+            <a href="mailto:usacouncil@svdpusa.org" class="hover:text-slate-900">usacouncil@svdpusa.org</a>
+          </div>
+        </div>
+        <p class="mt-2 text-slate-500">
+          Society of St. Vincent de Paul is a 501(c)(3) nonprofit organization.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  (() => {
+    const form = document.querySelector("[data-step-form]");
+    if (!form) return;
+
+    const steps = Array.from(form.querySelectorAll("[data-step]"));
+    const bar = document.querySelector("[data-step-bar]");
+    const label = document.querySelector("[data-step-label]");
+    const pills = Array.from(document.querySelectorAll("[data-step-pill]"));
+
+    const setStep = (stepNumber) => {
+      steps.forEach((step) => {
+        step.classList.toggle("hidden", step.dataset.step !== String(stepNumber));
+      });
+
+      const progress = (stepNumber / steps.length) * 100;
+      if (bar) bar.style.width = `${progress}%`;
+      if (label) label.textContent = `Step ${stepNumber} of ${steps.length} in progress`;
+
+      pills.forEach((pill) => {
+        const isActive = pill.dataset.stepPill === String(stepNumber);
+        pill.classList.toggle("bg-brand", isActive);
+        pill.classList.toggle("text-white", isActive);
+        pill.classList.toggle("bg-slate-200", !isActive);
+        pill.classList.toggle("text-slate-500", !isActive);
+      });
+    };
+
+    form.addEventListener("click", (event) => {
+      const next = event.target.closest("[data-step-next]");
+      const prev = event.target.closest("[data-step-prev]");
+      if (next) {
+        setStep(Number(next.dataset.stepNext) + 1);
+      }
+      if (prev) {
+        setStep(Number(prev.dataset.stepPrev) - 1);
+      }
+    });
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const getValue = (selector) =>
+        form.querySelector(selector)?.value?.trim() || "Not provided";
+
+      const donorInfo = [
+        `Name: ${getValue("#first-name")} ${getValue("#last-name")}`.replace(
+          "Not provided Not provided",
+          "Not provided"
+        ),
+        `Email: ${getValue("#email")}`,
+        `Phone: ${getValue("#phone")}`,
+        `Address: ${getValue("#address")}`,
+        `City: ${getValue("#city")}`,
+        `State: ${getValue("#state")}`,
+        `Zip: ${getValue("#zip")}`,
+        `Designation: ${getValue("#designation")}`,
+      ].join("\n");
+
+      alert(
+        `Connect to donation platform of choice (e.g., DonorPerfect).\n\nDonor Info:\n${donorInfo}`
+      );
+    });
+
+    setStep(1);
+  })();
+</script>

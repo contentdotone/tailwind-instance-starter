@@ -1,0 +1,20 @@
+
+  - id: "b2e0-8a60-cd06"
+    web:
+      metaDescription: ""
+      metaTitle: "Blog"
+      metaLinkText: "Blog"
+      metaKeywords: null
+      pathPart: "blog"
+      path: "/blog/"
+      sitemapPriority: -1
+      canonicalTagMode: 1
+      canonicalQueryParamWhitelist: null
+      canonicalTagCustomValue: null
+      parent: "/"
+    meta:
+      sort: 1
+      listed: true
+      createdByUserZUID: "5-57801f6-3cj46d"
+    data:
+      title: "SVdP Around the Country"

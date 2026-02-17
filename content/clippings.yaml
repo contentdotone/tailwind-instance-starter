@@ -1,0 +1,22 @@
+
+  - id: "3913-13ad-100a"
+    web:
+      metaDescription: ""
+      metaTitle: null
+      metaLinkText: null
+      metaKeywords: null
+      pathPart: null
+      path: null
+      sitemapPriority: -1
+      canonicalTagMode: 1
+      canonicalQueryParamWhitelist: null
+      canonicalTagCustomValue: null
+      parent: "/"
+    meta:
+      sort: 99
+      listed: true
+      createdByUserZUID: "5-44ccc74-sn4pc4st3r"
+    data:
+      footer_blurb: "<p><span>The National Council of the United States, Society of St. Vincent de Paul, Inc. is a non-profit organization under section 501(c)(3) of the United States Internal Revenue Code. Donations to the National Council are deductible. The Council&rsquo;s tax identification number is 13-5562362.</span></p>"
+      logo: "https://7m2bt8n1.media.zestyio.com/society-of-st-vincent-de-paul-logo-svg-vector.png"
+      site_name: "Society of St. Vincent de Paul"

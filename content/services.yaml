@@ -1,0 +1,199 @@
+
+  - id: "de5f-162c-2451"
+    web:
+      metaDescription: "Operation of centers providing non-perishable goods and hot meals to combat food insecurity."
+      metaTitle: "Food Pantries"
+      metaLinkText: ""
+      metaKeywords: null
+      pathPart: null
+      path: null
+      sitemapPriority: -1
+      canonicalTagMode: 1
+      canonicalQueryParamWhitelist: null
+      canonicalTagCustomValue: null
+      parent: "/"
+    meta:
+      sort: 105
+      listed: true
+      createdByUserZUID: "5-57801f6-3cj46d"
+    data:
+      description: "Many families cannot consistently put food on the table. Serving neighbors in need in communities across the United States, our food pantries provide both fresh and non-perishable goods in neighborhoods impacted by poverty."
+      main_image: "https://7m2bt8n1.media.zestyio.com/Food-pantry-St-Vincent-de-Paul-USA.jpg"
+      service_icon: "utensils"
+      title: "Food Pantries"
+  - id: "7a39-e2fb-7f81"
+    web:
+      metaDescription: "Assistance moving individuals quickly from homelessness into permanent housing with rent subsidies."
+      metaTitle: "Systemic Change"
+      metaLinkText: ""
+      metaKeywords: null
+      pathPart: null
+      path: null
+      sitemapPriority: -1
+      canonicalTagMode: 1
+      canonicalQueryParamWhitelist: null
+      canonicalTagCustomValue: null
+      parent: "/"
+    meta:
+      sort: 108
+      listed: true
+      createdByUserZUID: "5-57801f6-3cj46d"
+    data:
+      description: "Going beyond addressing the immediate needs of poverty, systemic change is about partnering with neighbors in need to identify the root causes of their poverty and remove the barriers that keep people impoverished.\n\nSystemic Change programs include the Back2Work program which provides customized training and mentoring to low-income unemployed or underemployed individuals, the IMMERSION™ program which assists incarcerated individuals returning to society, and the Getting Ahead in a Just-Gettin’-By World innovative workshop series."
+      main_image: "https://7m2bt8n1.media.zestyio.com/Back2Work-workforce-program-systemic-change-St-Vincent-de-Paul-USA.jpg"
+      service_icon: "key"
+      title: "Systemic Change"
+  - id: "3514-d607-f397"
+    web:
+      metaDescription: "Long-term recovery and \"House in a Box\" programs for victims of natural disasters."
+      metaTitle: "Disaster Services Corporation"
+      metaLinkText: ""
+      metaKeywords: null
+      pathPart: null
+      path: null
+      sitemapPriority: -1
+      canonicalTagMode: 1
+      canonicalQueryParamWhitelist: null
+      canonicalTagCustomValue: null
+      parent: "/"
+    meta:
+      sort: 106
+      listed: true
+      createdByUserZUID: "5-57801f6-3cj46d"
+    data:
+      description: "Focusing on long-term recovery through person-to-person support services, the Disaster Services Corporation (DSC) helps people in situational poverty brought about by natural and man-made disasters get their lives back in order."
+      main_image: "https://7m2bt8n1.media.zestyio.com/Nola-Disaster.jpg"
+      service_icon: "user-shield"
+      title: "Disaster Services Corporation"
+  - id: "6ae7-b517-8fa6"
+    web:
+      metaDescription: "Provision of life-saving prescription medications at no cost to the uninsured."
+      metaTitle: "Friends of the Poor Walk"
+      metaLinkText: ""
+      metaKeywords: null
+      pathPart: null
+      path: null
+      sitemapPriority: -1
+      canonicalTagMode: 1
+      canonicalQueryParamWhitelist: null
+      canonicalTagCustomValue: null
+      parent: "/"
+    meta:
+      sort: 107
+      listed: true
+      createdByUserZUID: "5-57801f6-3cj46d"
+    data:
+      description: "Since its beginnings in 2008, the Friends of the Poor® Walk/Run is an annual opportunity for local Conferences and Councils to raise funds and awareness for the Society’s work in their community. Funds raised help support special works projects and assist those in need. From walkers to coordinators to corporate sponsors, everyone in town can be involved in making a difference for those living in poverty!"
+      main_image: "https://7m2bt8n1.media.zestyio.com/fop-walk-600x400.jpg"
+      service_icon: "walking"
+      title: "Friends of the Poor Walk"
+  - id: "0afc-69cc-5616"
+    web:
+      metaDescription: "Financial aid provided to families to prevent eviction and maintain essential utility services."
+      metaTitle: "Youth & Young Adult"
+      metaLinkText: ""
+      metaKeywords: null
+      pathPart: null
+      path: null
+      sitemapPriority: -1
+      canonicalTagMode: 1
+      canonicalQueryParamWhitelist: null
+      canonicalTagCustomValue: null
+      parent: "/"
+    meta:
+      sort: 106
+      listed: true
+      createdByUserZUID: "5-57801f6-3cj46d"
+    data:
+      description: "Located in communities across the country, our 125 Youth and Young Adult SVdP Conferences provide opportunities for service and social connection to the young people who are the future of the Society of St. Vincent de Paul."
+      main_image: "https://7m2bt8n1.media.zestyio.com/Youth-young-adult-Vincentian-volunteers-St-Vincent-de-Paul-USA.SJX8NLcPZl.jpg"
+      service_icon: "hand-holding-heart"
+      title: "Youth & Young Adult"
+  - id: "57e8-f6b7-ed6e"
+    web:
+      metaDescription: "Development and management of low-income housing for seniors and veterans."
+      metaTitle: "International Twinning"
+      metaLinkText: ""
+      metaKeywords: null
+      pathPart: null
+      path: null
+      sitemapPriority: -1
+      canonicalTagMode: 1
+      canonicalQueryParamWhitelist: null
+      canonicalTagCustomValue: null
+      parent: "/"
+    meta:
+      sort: 107
+      listed: true
+      createdByUserZUID: "5-57801f6-3cj46d"
+    data:
+      description: "Committed to sharing financial resources, exchanging prayers, and creating cross-cultural friendships, the International Twinning program helps connect U.S. Conferences and Councils with those in countries lacking the means to conduct local works of charity."
+      main_image: "https://7m2bt8n1.media.zestyio.com/International-twinning-st-vincent-de-paul-SVDP-USA.jpg"
+      service_icon: "house-user"
+      title: "International Twinning"
+  - id: "41ed-3c7f-d3a9"
+    web:
+      metaDescription: "Emergency overnight housing and day centers providing hygiene and laundry facilities."
+      metaTitle: "Voice For the Poor"
+      metaLinkText: ""
+      metaKeywords: null
+      pathPart: null
+      path: null
+      sitemapPriority: -1
+      canonicalTagMode: 1
+      canonicalQueryParamWhitelist: null
+      canonicalTagCustomValue: null
+      parent: "/"
+    meta:
+      sort: 107
+      listed: true
+      createdByUserZUID: "5-57801f6-3cj46d"
+    data:
+      description: "Voice For the Poor is the advocacy arm of the Society of St. Vincent de Paul, identifying issues that are critical to those living in poverty and need, and bringing attention to the issue to reduce or eliminate poverty."
+      main_image: "https://7m2bt8n1.media.zestyio.com/Voice-for-the-Poor-advocacy-group-St-Vincent-de-Paul-600x400.jpg"
+      service_icon: "volume-up"
+      title: "Voice For the Poor"
+  - id: "e5d6-c4e4-c8cd"
+    web:
+      metaDescription: "Retail locations providing low-cost goods that fund the Society's charitable programs."
+      metaTitle: "Thrift Stores"
+      metaLinkText: ""
+      metaKeywords: null
+      pathPart: null
+      path: null
+      sitemapPriority: -1
+      canonicalTagMode: 1
+      canonicalQueryParamWhitelist: null
+      canonicalTagCustomValue: null
+      parent: "/"
+    meta:
+      sort: 107
+      listed: true
+      createdByUserZUID: "5-57801f6-3cj46d"
+    data:
+      description: "Providing meaningful employment and volunteer opportunities, our thrift stores are a significant driver of the Society’s mission and effectiveness. Profits from our stores contribute millions of dollars for Councils and Conferences to use in their communities."
+      main_image: "https://7m2bt8n1.media.zestyio.com/St-Vincent-de-Paul-USA-thrift-store-600x400.jpg"
+      service_icon: "shopping-cart"
+      title: "Thrift Stores"
+  - id: "a614-b3b9-9c99"
+    web:
+      metaDescription: "Pairs of volunteers visit individuals in their homes to offer personalized support and assessment."
+      metaTitle: "Home Visits"
+      metaLinkText: ""
+      metaKeywords: null
+      pathPart: null
+      path: null
+      sitemapPriority: -1
+      canonicalTagMode: 1
+      canonicalQueryParamWhitelist: null
+      canonicalTagCustomValue: null
+      parent: "/"
+    meta:
+      sort: 107
+      listed: true
+      createdByUserZUID: "5-57801f6-3cj46d"
+    data:
+      description: "Vincentian volunteers go in pairs of two to visit individuals and families in their home that have called seeking assistance. During this Home Visit, they develop a real friendship, listen to their concerns, and offer to pray together. Encountering our fellow human being in their place of residence can be transformative, and this practice of visiting those in need has been part of the Society since its inception.\n\nVincentians then seek to bring emergency financial assistance to that person in need’s household through assistance with rent, utilities, food, clothing, and other emergency needs in an effort to prevent homelessness."
+      main_image: "https://7m2bt8n1.media.zestyio.com/Home-Visit-Encounter-Sacred-Heart-Florissant-STL-Vincentians-web.jpg"
+      service_icon: "home"
+      title: "Home Visits"

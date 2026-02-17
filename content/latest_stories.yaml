@@ -1,0 +1,21 @@
+
+  - id: "5f8c-67d8-546e"
+    web:
+      metaDescription: ""
+      metaTitle: "National Stories"
+      metaLinkText: null
+      metaKeywords: null
+      pathPart: null
+      path: null
+      sitemapPriority: -1
+      canonicalTagMode: 1
+      canonicalQueryParamWhitelist: null
+      canonicalTagCustomValue: null
+      parent: "/"
+    meta:
+      sort: 160
+      listed: true
+      createdByUserZUID: "5-44ccc74-sn4pc4st3r"
+    data:
+      og_image: "https://storage.googleapis.com/zesty-prod-instance-screenshots/7m2bt8n1-dev.webengine.zesty.io!-!block!latest_stories.html!variant=7-88cd90e0cc-wlzl2h&version=3&_bypassError=true&preview=global_1280_720.png"
+      title: "Stories that Move with the Moment"

@@ -1,0 +1,696 @@
+
+  - description: null
+    label: "Globals"
+    type: "dataset"
+    name: "clippings"
+    sort: 1
+    listed: true
+    parent: null
+    content: "/content/clippings.yaml"
+    fields:
+      - name: "site_name"
+        label: "Site Name"
+        description: null
+        datatype: "text"
+        sort: 1
+        required: true
+        relationship: null
+        settings:
+          options: {}
+      - name: "logo"
+        label: "Site Logo"
+        description: null
+        datatype: "images"
+        sort: 2
+        required: null
+        relationship: null
+        settings:
+          limit: 1
+          options: {}
+      - name: "footer_blurb"
+        label: "Footer Blurb"
+        description: ""
+        datatype: "wysiwyg_basic"
+        sort: 3
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+  - description: null
+    label: "Homepage"
+    type: "templateset"
+    name: "homepage"
+    sort: 1
+    listed: true
+    parent: null
+    view: "/views/homepage.tpl"
+    content: "/content/homepage.yaml"
+    fields:
+      - name: "h1_title"
+        label: "H1 Title"
+        description: ""
+        datatype: "text"
+        sort: 1
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+      - name: "lead_in_title"
+        label: "Lead in Title"
+        description: ""
+        datatype: "text"
+        sort: 2
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+      - name: "lead_in_content"
+        label: "Lead in Content"
+        description: ""
+        datatype: "wysiwyg_basic"
+        sort: 3
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+      - name: "lead_in_image_1"
+        label: "Lead in Image 1"
+        description: ""
+        datatype: "images"
+        sort: 4
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          limit: ""
+          list: true
+      - name: "lead_in_image_2"
+        label: "Lead in Image 2"
+        description: ""
+        datatype: "images"
+        sort: 5
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          limit: ""
+          list: true
+      - name: "lead_in_image_3"
+        label: "Lead in Image 3"
+        description: ""
+        datatype: "images"
+        sort: 6
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          limit: ""
+          list: true
+      - name: "first_block"
+        label: "First Block"
+        description: ""
+        datatype: "block_selector"
+        sort: 7
+        required: false
+        relationship: null
+        settings:
+          list: true
+      - name: "second_block"
+        label: "Second Block"
+        description: ""
+        datatype: "block_selector"
+        sort: 8
+        required: false
+        relationship: null
+        settings:
+          list: true
+      - name: "third_block"
+        label: "Third Block"
+        description: ""
+        datatype: "block_selector"
+        sort: 9
+        required: false
+        relationship: null
+        settings:
+          list: true
+  - description: ""
+    label: "Blog"
+    type: "templateset"
+    name: "blog"
+    sort: 100
+    listed: true
+    parent: null
+    view: "/views/blog.tpl"
+    content: "/content/blog.yaml"
+    fields:
+      - name: "title"
+        label: "Title"
+        description: ""
+        datatype: "text"
+        sort: 1
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+  - description: ""
+    label: "Articles"
+    type: "pageset"
+    name: "articles"
+    sort: 102
+    listed: true
+    parent: "blog"
+    view: "/views/articles.tpl"
+    content: "/content/articles.yaml"
+    fields:
+      - name: "title"
+        label: "Title"
+        description: ""
+        datatype: "text"
+        sort: 1
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+      - name: "main_image"
+        label: "Main Image"
+        description: ""
+        datatype: "images"
+        sort: 2
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          limit: ""
+          list: true
+      - name: "content"
+        label: "Content"
+        description: ""
+        datatype: "wysiwyg_basic"
+        sort: 3
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+  - description: ""
+    label: "Locations"
+    type: "pageset"
+    name: "locations"
+    sort: 3
+    listed: true
+    parent: null
+    view: "/views/locations.tpl"
+    content: "/content/locations.yaml"
+    fields:
+      - name: "location_name"
+        label: "Location Name"
+        description: ""
+        datatype: "text"
+        sort: 0
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+      - name: "subtitle"
+        label: "Subtitle"
+        description: ""
+        datatype: "text"
+        sort: 2
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+      - name: "address"
+        label: "Address"
+        description: ""
+        datatype: "textarea"
+        sort: 3
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+      - name: "phone"
+        label: "Phone"
+        description: ""
+        datatype: "text"
+        sort: 7
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+      - name: "hours"
+        label: "Hours"
+        description: ""
+        datatype: "textarea"
+        sort: 8
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+      - name: "about"
+        label: "About"
+        description: ""
+        datatype: "wysiwyg_basic"
+        sort: 9
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+      - name: "services_offered"
+        label: "Services Offered"
+        description: ""
+        datatype: "one_to_many"
+        sort: 10
+        required: false
+        relationship:
+          name: "services"
+          display: "title"
+        settings:
+          defaultValue: null
+          list: true
+      - name: "city"
+        label: "City"
+        description: ""
+        datatype: "text"
+        sort: 4
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+      - name: "state"
+        label: "State"
+        description: ""
+        datatype: "text"
+        sort: 5
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+      - name: "zip_code"
+        label: "Zip Code"
+        description: ""
+        datatype: "text"
+        sort: 6
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+      - name: "main_image"
+        label: "Main Image"
+        description: ""
+        datatype: "images"
+        sort: 1
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          limit: ""
+          list: true
+      - name: "causecircle_id"
+        label: "CauseCircle ID"
+        description: ""
+        datatype: "text"
+        sort: 11
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+  - description: ""
+    label: "Services"
+    type: "dataset"
+    name: "services"
+    sort: 104
+    listed: true
+    parent: null
+    content: "/content/services.yaml"
+    fields:
+      - name: "title"
+        label: "Title"
+        description: ""
+        datatype: "text"
+        sort: 1
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+      - name: "description"
+        label: "Description"
+        description: ""
+        datatype: "textarea"
+        sort: 2
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+      - name: "service_icon"
+        label: "Service Icon"
+        description: ""
+        datatype: "text"
+        sort: 3
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+      - name: "main_image"
+        label: "Main Image"
+        description: ""
+        datatype: "images"
+        sort: 4
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          limit: ""
+          list: true
+  - description: ""
+    label: "Location Finder"
+    type: "templateset"
+    name: "location_finder"
+    sort: 144
+    listed: true
+    parent: null
+    view: "/views/location_finder.tpl"
+    content: "/content/location_finder.yaml"
+    fields:
+      - name: "title"
+        label: "Title"
+        description: ""
+        datatype: "text"
+        sort: 1
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+  - description: ""
+    label: "Donation Page"
+    type: "templateset"
+    name: "donation_page"
+    sort: 145
+    listed: true
+    parent: null
+    view: "/views/donation_page.tpl"
+    content: "/content/donation_page.yaml"
+    fields:
+      - name: "title"
+        label: "Title"
+        description: ""
+        datatype: "text"
+        sort: 1
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+      - name: "image"
+        label: "Image"
+        description: ""
+        datatype: "images"
+        sort: 2
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          limit: ""
+          list: true
+  - description: ""
+    label: "About"
+    type: "templateset"
+    name: "about"
+    sort: 147
+    listed: true
+    parent: null
+    view: "/views/about.tpl"
+    content: "/content/about.yaml"
+    fields:
+      - name: "title"
+        label: "Title"
+        description: ""
+        datatype: "text"
+        sort: 1
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+      - name: "content"
+        label: "Content"
+        description: ""
+        datatype: "wysiwyg_basic"
+        sort: 2
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+      - name: "hero_image"
+        label: "Hero Image"
+        description: ""
+        datatype: "images"
+        sort: 3
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          limit: ""
+          list: true
+  - description: ""
+    label: "Ways We Help"
+    type: "templateset"
+    name: "ways_we_help"
+    sort: 153
+    listed: true
+    parent: null
+    view: "/views/ways_we_help.tpl"
+    content: "/content/ways_we_help.yaml"
+    fields:
+      - name: "title"
+        label: "Title"
+        description: ""
+        datatype: "text"
+        sort: 1
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+      - name: "content"
+        label: "Content"
+        description: ""
+        datatype: "wysiwyg_basic"
+        sort: 2
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+      - name: "image"
+        label: "Image"
+        description: ""
+        datatype: "images"
+        sort: 3
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          limit: ""
+          list: true
+  - description: ""
+    label: "Three Ways"
+    type: "block"
+    name: "three_ways"
+    sort: 155
+    listed: false
+    parent: null
+    content: "/content/three_ways.yaml"
+    fields:
+      - name: "og_image"
+        label: "Meta Image"
+        description: "This field allows you to set an open graph image via the SEO tab. An Open Graph (OG) image is an image that appears on a social media post when a web page is shared."
+        datatype: "images"
+        sort: 9999
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          limit: 1
+          list: false
+      - name: "title"
+        label: "Title"
+        description: ""
+        datatype: "text"
+        sort: 10000
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+  - description: ""
+    label: "Impact"
+    type: "block"
+    name: "impact"
+    sort: 157
+    listed: false
+    parent: null
+    content: "/content/impact.yaml"
+    fields:
+      - name: "og_image"
+        label: "Meta Image"
+        description: "This field allows you to set an open graph image via the SEO tab. An Open Graph (OG) image is an image that appears on a social media post when a web page is shared."
+        datatype: "images"
+        sort: 9999
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          limit: 1
+          list: false
+      - name: "title"
+        label: "Title"
+        description: ""
+        datatype: "text"
+        sort: 10000
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+  - description: ""
+    label: "Latest Stories"
+    type: "block"
+    name: "latest_stories"
+    sort: 159
+    listed: false
+    parent: null
+    content: "/content/latest_stories.yaml"
+    fields:
+      - name: "og_image"
+        label: "Meta Image"
+        description: "This field allows you to set an open graph image via the SEO tab. An Open Graph (OG) image is an image that appears on a social media post when a web page is shared."
+        datatype: "images"
+        sort: 9999
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          limit: 1
+          list: false
+      - name: "title"
+        label: "Title"
+        description: ""
+        datatype: "text"
+        sort: 10000
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+  - description: ""
+    label: "Search Bar"
+    type: "block"
+    name: "search_bar"
+    sort: 161
+    listed: false
+    parent: null
+    content: "/content/search_bar.yaml"
+    fields:
+      - name: "og_image"
+        label: "Meta Image"
+        description: "This field allows you to set an open graph image via the SEO tab. An Open Graph (OG) image is an image that appears on a social media post when a web page is shared."
+        datatype: "images"
+        sort: 9999
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          limit: 1
+          list: false
+      - name: "title"
+        label: "Title"
+        description: ""
+        datatype: "text"
+        sort: 10000
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+  - description: ""
+    label: "Donor Perfect Form"
+    type: "block"
+    name: "donor_perfect_form"
+    sort: 163
+    listed: false
+    parent: null
+    content: "/content/donor_perfect_form.yaml"
+    fields:
+      - name: "og_image"
+        label: "Meta Image"
+        description: "This field allows you to set an open graph image via the SEO tab. An Open Graph (OG) image is an image that appears on a social media post when a web page is shared."
+        datatype: "images"
+        sort: 9999
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          limit: 1
+          list: false
+      - name: "title"
+        label: "Title"
+        description: ""
+        datatype: "text"
+        sort: 10000
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true
+  - description: ""
+    label: "SVDP Structure"
+    type: "block"
+    name: "svdp_structure"
+    sort: 165
+    listed: false
+    parent: null
+    content: "/content/svdp_structure.yaml"
+    fields:
+      - name: "og_image"
+        label: "Meta Image"
+        description: "This field allows you to set an open graph image via the SEO tab. An Open Graph (OG) image is an image that appears on a social media post when a web page is shared."
+        datatype: "images"
+        sort: 9999
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          limit: 1
+          list: false
+      - name: "title"
+        label: "Title"
+        description: ""
+        datatype: "text"
+        sort: 10000
+        required: false
+        relationship: null
+        settings:
+          defaultValue: null
+          list: true

@@ -1,0 +1,163 @@
+<section class="bg-slate-900 px-4 py-16 text-white sm:px-6 lg:px-8">
+  <div class="mx-auto w-full max-w-6xl">
+    <div class="flex flex-col gap-3">
+      <p class="text-xs font-semibold uppercase tracking-[0.32em] text-slate-400">Story Hub</p>
+      <h2 class="text-3xl font-semibold sm:text-4xl">Stories that move with the moment</h2>
+      <p class="max-w-2xl text-sm text-slate-300">Hover a story on the right to reveal it. When you stop, the hub rotates through the full set automatically.</p>
+    </div>
+
+    <div class="mt-10 grid gap-8 lg:grid-cols-[1.2fr_1fr] lg:items-start">
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-lg">
+        <div class="mb-6 flex gap-2">
+          {{each articles as story limit 5}}
+            <div class="story-bar h-1 flex-1 overflow-hidden rounded-full bg-white/10">
+              <span class="story-bar-fill block h-full w-0 rounded-full bg-brand transition-[width] duration-[6000ms] ease-linear"></span>
+            </div>
+          {{/each}}
+        </div>
+ 
+        {{each articles as story limit 1}}
+          <div id="story-main" class="story-enter">
+            <div class="overflow-hidden rounded-xl bg-white/10">
+              <img id="story-image" class="h-64 w-full object-cover sm:h-72" src="{{story.main_image.getImage()}}" alt="{{story.title}}" loading="lazy">
+            </div>
+            <p id="story-kicker" class="mt-6 text-xs font-semibold uppercase tracking-[0.28em] text-slate-400">Story</p>
+            <h3 id="story-title" class="mt-3 text-2xl font-semibold text-white">{{story.title}}</h3>
+            <p id="story-desc" class="mt-4 text-sm leading-relaxed text-slate-300">
+              {{story.content.striptags(0,220)}}...
+            </p>
+            <a id="story-link" href="{{story.getURL()}}" class="mt-6 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+              Read the story
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        {{/each}}
+      </div>
+
+      <div class="space-y-4">
+        {{each articles as story limit 5}}
+          <button
+            type="button"
+            class="story-item group flex w-full items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-4 text-left transition hover:border-white/30 hover:bg-white/10"
+            data-story
+            data-kicker="Story"
+            data-title="{{story.title}}"
+            data-desc="{{story.content.striptags(0,180)}}..."
+            data-link="{{story.getURL()}}"
+            data-image="{{story.main_image.getImage()}}"
+          >
+            <img class="h-20 w-28 rounded-xl object-cover" src="{{story.main_image.getImage()}}" alt="{{story.title}}">
+            <div class="flex-1">
+              <p class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-400">Story</p>
+              <h4 class="mt-2 text-sm font-semibold text-white">{{story.title}}</h4>
+            </div>
+          </button>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .story-enter {
+    animation: storyEnter 420ms ease;
+  }
+
+  @keyframes storyEnter {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<script>
+  (() => {
+    const items = Array.from(document.querySelectorAll("[data-story]"));
+    const kicker = document.getElementById("story-kicker");
+    const title = document.getElementById("story-title");
+    const desc = document.getElementById("story-desc");
+    const image = document.getElementById("story-image");
+    const link = document.getElementById("story-link");
+    const main = document.getElementById("story-main");
+    const bars = Array.from(document.querySelectorAll(".story-bar-fill"));
+    const interval = 6000;
+    let activeIndex = 0;
+    let timer;
+    let resumeTimer;
+
+    const resetBars = () => {
+      bars.forEach((bar) => {
+        bar.style.transitionDuration = "0ms";
+        bar.style.width = "0%";
+      });
+      requestAnimationFrame(() => {
+        const activeBar = bars[activeIndex];
+        if (!activeBar) return;
+        activeBar.style.transitionDuration = `${interval}ms`;
+        activeBar.style.width = "100%";
+      });
+    };
+
+    const setActive = (index) => {
+      const item = items[index];
+      if (!item) return;
+      activeIndex = index;
+      items.forEach((node, i) => {
+        node.classList.toggle("border-white/40", i === index);
+        node.classList.toggle("bg-white/15", i === index);
+      });
+      kicker.textContent = item.dataset.kicker || "";
+      title.textContent = item.dataset.title || "";
+      desc.textContent = item.dataset.desc || "";
+      if (image) {
+        image.src = item.dataset.image || "";
+        image.alt = item.dataset.title || "";
+      }
+      link.setAttribute("href", item.dataset.link || "#");
+      main.classList.remove("story-enter");
+      void main.offsetWidth;
+      main.classList.add("story-enter");
+      resetBars();
+    };
+
+    const scheduleNext = () => {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        const nextIndex = (activeIndex + 1) % items.length;
+        setActive(nextIndex);
+        scheduleNext();
+      }, interval);
+    };
+
+    items.forEach((item, index) => {
+      item.addEventListener("mouseenter", () => {
+        clearTimeout(timer);
+        clearTimeout(resumeTimer);
+        setActive(index);
+      });
+      item.addEventListener("mouseleave", () => {
+        clearTimeout(resumeTimer);
+        resumeTimer = setTimeout(() => {
+          scheduleNext();
+        }, 1200);
+      });
+      item.addEventListener("focus", () => {
+        clearTimeout(timer);
+        setActive(index);
+      });
+      item.addEventListener("blur", () => {
+        scheduleNext();
+      });
+    });
+
+    if (items.length) {
+      setActive(0);
+      scheduleNext();
+    }
+  })();
+</script>

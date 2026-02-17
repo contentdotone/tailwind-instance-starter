@@ -1,0 +1,67 @@
+<div className={styles.pvlRoot}>
+	<section class="bg-white py-10">
+		<div class="container md-container mx-auto">
+			<h2>Welcome to our Freestyle page!</h2>
+		</div>
+	</section>
+	<div class="dndcontainer container md-container mx-auto max-w-5xl">
+		<div>
+			<div class="grid grid-cols-2 gap-4">
+				<div class="col-span-1">
+					<h1 class="text-4xl font-medium" style="margin-bottom:20px;">&nbsp;{{this.title}}&nbsp;</h1>
+					<p>{{this.content}}</p>
+				</div>
+				<div class="col-span-1">
+					<img width="100%" src="{{this.hero_image.getImage()}}" alt="placeholder">
+					<br>
+					<div class="grid grid-cols-2 gap-4">
+						<div class="col-span-1">
+							<img width="100%" src="https://7m2bt8n1.media.zestyio.com/stlouse-arch.jpg" alt="placeholder">
+						</div>
+						<div class="col-span-1">
+							<img width="100%" src="https://7m2bt8n1.media.zestyio.com/mission-cathedral.jpg" alt="placeholder">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container md-container mx-auto max-w-5xl">
+		<div>
+			<div>{{block('/-/block/donor_perfect_form.html?variant=7-8ebda1a9b6-qzx9t5')}}</div>
+		</div>
+	</div>
+	<div class="dndcontainer container md-container mx-auto max-w-5xl">
+		<div>
+			<br>
+			<div class="grid grid-cols-6 gap-3">
+				<div class="col-span-1">
+					<img width="100%" src="https://7m2bt8n1.media.zestyio.com/Back2Work-workforce-program-systemic-change-St-Vincent-de-Paul-USA.jpg" alt="placeholder">
+				</div>
+				<div class="col-span-1">
+					<img width="100%" src="https://7m2bt8n1.media.zestyio.com/Food-pantry-St-Vincent-de-Paul-USA.jpg" alt="placeholder">
+				</div>
+				<div class="col-span-1">
+					<img width="100%" src="https://7m2bt8n1.media.zestyio.com/International-twinning-st-vincent-de-paul-SVDP-USA.jpg" alt="placeholder">
+				</div>
+				<div class="col-span-1">
+					<img width="100%" src="https://7m2bt8n1.media.zestyio.com/julia-m-cameron-6994889.jpg" alt="placeholder">
+				</div>
+				<div class="col-span-1">
+					<img width="100%" src="https://7m2bt8n1.media.zestyio.com/popup-img.jpg" alt="placeholder">
+				</div>
+				<div class="col-span-1">
+					<img width="100%" src="https://7m2bt8n1.media.zestyio.com/Youth-young-adult-Vincentian-volunteers-St-Vincent-de-Paul-USA.jpg" alt="placeholder">
+				</div>
+			</div>
+		</div>
+	</div>
+	{{block('/-/block/impact.html?variant=7-dcf4fcc3fc-j826qc')}}
+	{{block('/-/block/three_ways.html?variant=7-ca8589fdc2-8bqvdt')}}
+	<div class="dndcontainer container md-container mx-auto max-w-5xl">
+		<div>
+			<p style="margin-top:50px;">For families who have lost everything and are finally cleared to move into new, stable housing, the cost of furnishing a home from scratch is an insurmountable barrier. This program provides a kit of brand-new, high-quality household items delivered directly to the family. Unlike donated used goods, these are new items that restore a sense of pride and normalcy.</p>
+		</div>
+	</div>
+	{{block('/-/block/latest_stories.html?variant=7-88cd90e0cc-wlzl2h')}}
+</div>

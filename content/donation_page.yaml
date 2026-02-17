@@ -1,0 +1,21 @@
+
+  - id: "0ccc-3709-10a3"
+    web:
+      metaDescription: ""
+      metaTitle: "Donation Page"
+      metaLinkText: "Donation Page"
+      metaKeywords: null
+      pathPart: "donate"
+      path: "/donate/"
+      sitemapPriority: -1
+      canonicalTagMode: 1
+      canonicalQueryParamWhitelist: null
+      canonicalTagCustomValue: null
+      parent: "/"
+    meta:
+      sort: 146
+      listed: true
+      createdByUserZUID: "5-44ccc74-sn4pc4st3r"
+    data:
+      image: null
+      title: "Donate"

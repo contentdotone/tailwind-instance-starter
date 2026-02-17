@@ -1,0 +1,23 @@
+{{if {request.pathPart(1)} }}
+<div class="bg-slate-50">
+  <div class="mx-auto w-full max-w-6xl">
+
+    <nav class="w-full">
+        <div class="mx-auto w-full max-w-6xl px-4 py-4 text-sm text-slate-500 sm:px-6 lg:px-8">
+            <a href="/" class="transition hover:text-slate-900">Home</a>
+            <span class="mx-2 text-slate-300">/</span>
+            <a href="/{{request.pathPart(1)}}" class="transition capitalize hover:text-slate-900">
+            {{request.pathPart(1).replace(-, )}}
+            </a>
+            {{if {request.pathPart(2)} }}
+            <span class="mx-2 text-slate-300">/</span>
+            <span class="capitalize text-slate-700">
+            {{request.pathPart(2).replace(/-/, )}}
+            </span>
+            {{/if}}
+        </div>
+    </nav>
+  </div>
+</div>  
+
+{{/if}}
