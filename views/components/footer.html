@@ -21,14 +21,14 @@
  
       <div class="flex flex-col items-start gap-4">
         <nav class="flex flex-wrap items-center gap-6 text-sm font-medium text-slate-600" aria-label="Footer">
-          <a href="{{truepath(7-b4c991d2f7-9hsk0b)}}" class="transition hover:text-slate-900">Locations</a>
-          <a href="{{truepath(7-9eb1ee9fbe-ddknjn)}}" class="transition hover:text-slate-900">Articles</a>
+          <a href="{{location_finder.first().getUrl()}}" class="transition hover:text-slate-900">Locations</a>
+          <a href="{{blog.first().getUrl()}}" class="transition hover:text-slate-900">Articles</a>
           
-          <a href="{{truepath(7-aa92e6a6db-4gz2nt)}}" class="transition hover:text-slate-900">Ways We Help</a>
-          <a href="{{truepath(7-b8fc9cfeeb-tr663z)}}" class="transition hover:text-slate-900">About</a>
+          <a href="{{ways_we_help.first().getUrl()}}" class="transition hover:text-slate-900">Ways We Help</a>
+          <a href="{{about.first().getUrl()}}" class="transition hover:text-slate-900">About</a>
         </nav>
         <a
-          href="{{truepath(7-82cc9883da-jwvl56)}}"
+          href="{{donation_page.first().getUrl()}}"
           class="rounded-full bg-brand px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-sm transition hover:bg-brand-light"
         >
           Support the Cause
